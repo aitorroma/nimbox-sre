@@ -33,7 +33,7 @@ services:
       # ── Event-triggered alert webhook ──────────────────────────────
       - WEBHOOK_ENABLED=${WEBHOOK_ENABLED:-true}
       - WEBHOOK_PORT=${WEBHOOK_PORT:-8644}
-      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-${ALERT_WEBHOOK_SECRET}}
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-${ALERT_WEBHOOK_SECRET:-${MODERN_COLLECTOR_WEBHOOK_SECRET}}}
       - TELEGRAM_ALERT_CHAT_ID=${TELEGRAM_ALERT_CHAT_ID:-${TELEGRAM_ALLOWED_USERS}}
       # ── Modern Collector maintenance windows ──────────────────────
       - MONIT_API_URL=${MONIT_API_URL:-https://monit.hiveagilectl.sh}
