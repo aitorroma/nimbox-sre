@@ -1,0 +1,49 @@
+services:
+  hermes:
+    build: .
+    image: nimbox-sre-hermes
+    container_name: nimbox-sre
+    restart: unless-stopped
+    ports:
+      # Authenticated webhook ingress for Modern Collector alerts.
+      - "${WEBHOOK_PORT:-8644}:${WEBHOOK_PORT:-8644}"
+    volumes:
+      # Hermes itself uses HERMES_HOME=/opt/data. Name this volume explicitly
+      # so private ticket secrets and the agent SSH key survive recreations.
+      - hermes_state:/opt/data
+      - hermes_data:/opt/hermes/data
+      - hermes_wiki:/opt/hermes/wiki
+      - ./docker/.env:/opt/hermes/.env:ro
+    environment:
+      # ── Telegram ──────────────────────────────────────────────────
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
+      # ── Model (nan.builders) ─────────────────────────────────────
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-https://api.nan.builders/v1}
+      - OPENAI_MODEL=${OPENAI_MODEL:-qwen3.6}
+      # ── Nightingale ───────────────────────────────────────────────
+      - NIGHTINGALE_API_URL=${NIGHTINGALE_API_URL:-https://collector.nimbox360.com/api/n9e}
+      - NIGHTINGALE_TOKEN=${NIGHTINGALE_TOKEN}
+      # ── Warpgate ──────────────────────────────────────────────────
+      - WARPGATE_API_URL=${WARPGATE_API_URL:-https://geo.nimbox360.com/@warpgate/admin/api}
+      - WARPGATE_TOKEN=${WARPGATE_TOKEN}
+      # ── OpenSRE ───────────────────────────────────────────────────
+      - OPENSRE_URL=${OPENSRE_URL:-https://sre.nimbox360.com}
+      # ── Event-triggered alert webhook ──────────────────────────────
+      - WEBHOOK_ENABLED=${WEBHOOK_ENABLED:-true}
+      - WEBHOOK_PORT=${WEBHOOK_PORT:-8644}
+      # Local compatibility: the existing value is named
+      # MODERN_COLLECTOR_WEBHOOK_SECRET. Production Swarm uses
+      # WEBHOOK_SECRET=${ALERT_WEBHOOK_SECRET} instead.
+      - WEBHOOK_SECRET=${WEBHOOK_SECRET:-${MODERN_COLLECTOR_WEBHOOK_SECRET}}
+      - TELEGRAM_ALERT_CHAT_ID=${TELEGRAM_ALERT_CHAT_ID:-${TELEGRAM_ALLOWED_USERS}}
+      # ── Modern Collector maintenance windows ──────────────────────
+      - MONIT_API_URL=${MONIT_API_URL:-https://monit.hiveagilectl.sh}
+      - MONIT_API_TOKEN=${MONIT_API_TOKEN}
+    command: ["/opt/hermes/docker/start-gateway.sh"]
+
+volumes:
+  hermes_state:
+  hermes_data:
+  hermes_wiki:

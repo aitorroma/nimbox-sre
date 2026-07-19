@@ -1,0 +1,5247 @@
+{
+  "nodes": [
+    {
+      "id": "agent",
+      "label": "agent.py",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_nightingaleclient",
+      "label": "NightingaleClient",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_nightingaleclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_nightingaleclient_get_targets",
+      "label": ".get_targets()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_nightingaleclient_get_alerts",
+      "label": ".get_alerts()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_warpgateclient",
+      "label": "WarpgateClient",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_warpgateclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L48",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_warpgateclient_create_ticket",
+      "label": ".create_ticket()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_wikimanager",
+      "label": "WikiManager",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_wikimanager_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L67",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_wikimanager_log_entry",
+      "label": ".log_entry()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L75",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_wikimanager_create_incident",
+      "label": ".create_incident()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_wikimanager_create_runbook",
+      "label": ".create_runbook()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L109",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "agent.py",
+      "source_location": "L129",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_rationale_28",
+      "label": "Cliente para Nightingale API",
+      "file_type": "rationale",
+      "source_file": "agent.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_rationale_46",
+      "label": "Cliente para Warpgate API",
+      "file_type": "rationale",
+      "source_file": "agent.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_rationale_65",
+      "label": "Gestor de wiki siguiendo patr\u00f3n Karpathy",
+      "file_type": "rationale",
+      "source_file": "agent.py",
+      "source_location": "L65",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_rationale_76",
+      "label": "Agregar entrada al log",
+      "file_type": "rationale",
+      "source_file": "agent.py",
+      "source_location": "L76",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_rationale_84",
+      "label": "Crear p\u00e1gina de incidente",
+      "file_type": "rationale",
+      "source_file": "agent.py",
+      "source_location": "L84",
+      "_origin": "ast"
+    },
+    {
+      "id": "agent_rationale_130",
+      "label": "Funci\u00f3n principal del agente",
+      "file_type": "rationale",
+      "source_file": "agent.py",
+      "source_location": "L130",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "app/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_config",
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "app/config.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_config_settings",
+      "label": "Settings",
+      "file_type": "code",
+      "source_file": "app/config.py",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "basesettings",
+      "label": "BaseSettings",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_config_config",
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "app/config.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_config_settings_output_path",
+      "label": ".output_path()",
+      "file_type": "code",
+      "source_file": "app/config.py",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_config_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_conversation_agent",
+      "label": "conversation_agent.py",
+      "file_type": "code",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_conversation_agent_build_conversation_agent",
+      "label": "build_conversation_agent()",
+      "file_type": "code",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_conversation_agent_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_conversation_agent_is_configured",
+      "label": "is_configured()",
+      "file_type": "code",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L207",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main",
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_nightingaleclient",
+      "label": "NightingaleClient",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_nightingaleclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_nightingaleclient_get_targets",
+      "label": ".get_targets()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_nightingaleclient_get_alerts",
+      "label": ".get_alerts()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_warpgateclient",
+      "label": "WarpgateClient",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_warpgateclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_warpgateclient_get_targets",
+      "label": ".get_targets()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_warpgateclient_create_ticket",
+      "label": ".create_ticket()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L54",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_wikimanager",
+      "label": "WikiManager",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_wikimanager_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L67",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_wikimanager_log_entry",
+      "label": ".log_entry()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L73",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_root",
+      "label": "root()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_py_any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_health",
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L92",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_list_targets",
+      "label": "list_targets()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L103",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_list_alerts",
+      "label": "list_alerts()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L109",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_list_warpgate_targets",
+      "label": "list_warpgate_targets()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L115",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_create_ticket",
+      "label": "create_ticket()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L121",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_main_telegram_webhook",
+      "label": "telegram_webhook()",
+      "file_type": "code",
+      "source_file": "app/main.py",
+      "source_location": "L127",
+      "_origin": "ast"
+    },
+    {
+      "id": "request",
+      "label": "Request",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models",
+      "label": "models.py",
+      "file_type": "code",
+      "source_file": "app/models.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_hoststatus",
+      "label": "HostStatus",
+      "file_type": "code",
+      "source_file": "app/models.py",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_alert",
+      "label": "Alert",
+      "file_type": "code",
+      "source_file": "app/models.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_investigation",
+      "label": "Investigation",
+      "file_type": "code",
+      "source_file": "app/models.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_ticketrequest",
+      "label": "TicketRequest",
+      "file_type": "code",
+      "source_file": "app/models.py",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_rationale_7",
+      "label": "Estado de un host monitoreado",
+      "file_type": "rationale",
+      "source_file": "app/models.py",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_rationale_18",
+      "label": "Alerta de Nightingale",
+      "file_type": "rationale",
+      "source_file": "app/models.py",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_rationale_31",
+      "label": "Resultado de investigaci\u00f3n",
+      "file_type": "rationale",
+      "source_file": "app/models.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_models_rationale_40",
+      "label": "Solicitud de ticket Warpgate",
+      "file_type": "rationale",
+      "source_file": "app/models.py",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client",
+      "label": "nightingale_client.py",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient",
+      "label": "NightingaleClient",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient_get_targets",
+      "label": ".get_targets()",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient_get_target",
+      "label": ".get_target()",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient_get_active_alerts",
+      "label": ".get_active_alerts()",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient_get_alert_rules",
+      "label": ".get_alert_rules()",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_nightingaleclient_get_busi_groups",
+      "label": ".get_busi_groups()",
+      "file_type": "code",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_rationale_1",
+      "label": "Nightingale API client for monitoring data",
+      "file_type": "rationale",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_rationale_17",
+      "label": "Get all monitored targets",
+      "file_type": "rationale",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_nightingale_client_rationale_24",
+      "label": "Get specific target details",
+      "file_type": "rationale",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder",
+      "label": "report_builder.py",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_load_report_script",
+      "label": "_load_report_script()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_annualize",
+      "label": "_annualize()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_normalize_tariff",
+      "label": "_normalize_tariff()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_map_consumption_for_report",
+      "label": "_map_consumption_for_report()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_map_power_for_report",
+      "label": "_map_power_for_report()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_build_report_payload",
+      "label": "build_report_payload()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "analysiscontext",
+      "label": "AnalysisContext",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_py_any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_generate_report_pdf",
+      "label": "generate_report_pdf()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L152",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_report_builder_save_report_payload",
+      "label": "save_report_payload()",
+      "file_type": "code",
+      "source_file": "app/report_builder.py",
+      "source_location": "L161",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage",
+      "label": "storage.py",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore",
+      "label": "StateStore",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore_conn",
+      "label": "._conn()",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "connection",
+      "label": "Connection",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore_init_db",
+      "label": "._init_db()",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore_get",
+      "label": ".get()",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_py_any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore_set",
+      "label": ".set()",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_storage_statestore_clear",
+      "label": ".clear()",
+      "file_type": "code",
+      "source_file": "app/storage.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client",
+      "label": "telegram_client.py",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient",
+      "label": "TelegramClient",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_post",
+      "label": "._post()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_py_any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_send_message",
+      "label": ".send_message()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_send_document",
+      "label": ".send_document()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_answer_callback",
+      "label": ".answer_callback()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_get_file",
+      "label": ".get_file()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "telegramfile",
+      "label": "TelegramFile",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_telegram_client_telegramclient_set_webhook",
+      "label": ".set_webhook()",
+      "file_type": "code",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_tools_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "app/tools/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client",
+      "label": "warpgate_client.py",
+      "file_type": "code",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_warpgateclient",
+      "label": "WarpgateClient",
+      "file_type": "code",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_warpgateclient_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_warpgateclient_get_targets",
+      "label": ".get_targets()",
+      "file_type": "code",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_warpgateclient_create_ticket",
+      "label": ".create_ticket()",
+      "file_type": "code",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_warpgateclient_get_ticket_requests",
+      "label": ".get_ticket_requests()",
+      "file_type": "code",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_rationale_1",
+      "label": "Warpgate API client for server access",
+      "file_type": "rationale",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_rationale_17",
+      "label": "Get all available targets",
+      "file_type": "rationale",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_rationale_24",
+      "label": "Create a ticket for server access",
+      "file_type": "rationale",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_warpgate_client_rationale_42",
+      "label": "Get pending ticket requests",
+      "file_type": "rationale",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_ensure_state_permissions",
+      "label": "ensure-state-permissions.sh",
+      "file_type": "code",
+      "source_file": "docker/ensure-state-permissions.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_ensure_state_permissions_sh__entry",
+      "label": "ensure-state-permissions.sh script",
+      "file_type": "code",
+      "source_file": "docker/ensure-state-permissions.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_setup_model",
+      "label": "setup-model.sh",
+      "file_type": "code",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_setup_model_sh__entry",
+      "label": "setup-model.sh script",
+      "file_type": "code",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_setup_model_openai_api_key",
+      "label": "OPENAI_API_KEY",
+      "file_type": "code",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L11",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_setup_model_openai_base_url",
+      "label": "OPENAI_BASE_URL",
+      "file_type": "code",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L12",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_setup_model_openai_model",
+      "label": "OPENAI_MODEL",
+      "file_type": "code",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L13",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_start_gateway",
+      "label": "start-gateway.sh",
+      "file_type": "code",
+      "source_file": "docker/start-gateway.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_start_gateway_sh__entry",
+      "label": "start-gateway.sh script",
+      "file_type": "code",
+      "source_file": "docker/start-gateway.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_nightingale_tool",
+      "label": "nightingale_tool.py",
+      "file_type": "code",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_nightingale_tool_check_nightingale_requirements",
+      "label": "check_nightingale_requirements()",
+      "file_type": "code",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_nightingale_tool_nightingale_tool",
+      "label": "nightingale_tool()",
+      "file_type": "code",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_nightingale_tool_rationale_1",
+      "label": "Nightingale Tool -- query monitoring data from Nightingale.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_nightingale_tool_rationale_10",
+      "label": "Return True if the tool's dependencies are available.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_nightingale_tool_rationale_15",
+      "label": "Query Nightingale monitoring data.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_opensre_tool",
+      "label": "opensre_tool.py",
+      "file_type": "code",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_opensre_tool_check_opensre_requirements",
+      "label": "check_opensre_requirements()",
+      "file_type": "code",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_opensre_tool_opensre_tool",
+      "label": "opensre_tool()",
+      "file_type": "code",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_opensre_tool_rationale_1",
+      "label": "OpenSRE Tool -- investigate incidents with OpenSRE.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_opensre_tool_rationale_10",
+      "label": "Return True if the tool's dependencies are available.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_opensre_tool_rationale_15",
+      "label": "Investigate incidents with OpenSRE.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_toolsets",
+      "label": "toolsets.py",
+      "file_type": "code",
+      "source_file": "docker/tools/toolsets.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_toolsets_rationale_1",
+      "label": "Toolsets for SRE Agent.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/toolsets.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_warpgate_tool",
+      "label": "warpgate_tool.py",
+      "file_type": "code",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_warpgate_tool_check_warpgate_requirements",
+      "label": "check_warpgate_requirements()",
+      "file_type": "code",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_warpgate_tool_warpgate_tool",
+      "label": "warpgate_tool()",
+      "file_type": "code",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_warpgate_tool_rationale_1",
+      "label": "Warpgate Tool -- manage server access via Warpgate.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_warpgate_tool_rationale_10",
+      "label": "Return True if the tool's dependencies are available.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "docker_tools_warpgate_tool_rationale_15",
+      "label": "Manage server access via Warpgate.",
+      "file_type": "rationale",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_result",
+      "label": "_result()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_py_any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_error",
+      "label": "_error()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "exception",
+      "label": "Exception",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_nightingale_ready",
+      "label": "_nightingale_ready()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_warpgate_ready",
+      "label": "_warpgate_ready()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_opensre_ready",
+      "label": "_opensre_ready()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_maintenance_ready",
+      "label": "_maintenance_ready()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L48",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_nightingale",
+      "label": "nightingale()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_warpgate_json",
+      "label": "_warpgate_json()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "response",
+      "label": "Response",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_find_by_name",
+      "label": "_find_by_name()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L88",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_ticket_store_path",
+      "label": "_ticket_store_path()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L93",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_py_path",
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_state_dir",
+      "label": "_state_dir()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L98",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_agent_key_paths",
+      "label": "_agent_key_paths()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L106",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_ensure_agent_ssh_key",
+      "label": "_ensure_agent_ssh_key()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L111",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_public_key_material",
+      "label": "_public_key_material()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L138",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_save_ticket_secret",
+      "label": "_save_ticket_secret()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L147",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_load_ticket_secret",
+      "label": "_load_ticket_secret()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L158",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_delete_ticket_secret",
+      "label": "_delete_ticket_secret()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L168",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_redact",
+      "label": "_redact()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L182",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "label": "_run_ticket_ssh()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L186",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_run_agent_ssh",
+      "label": "_run_agent_ssh()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L225",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_warpgate",
+      "label": "warpgate()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L266",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_opensre",
+      "label": "opensre()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L426",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_maintenance",
+      "label": "maintenance()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L445",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_register",
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L533",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_1",
+      "label": "NimBox SRE tools exposed to the Hermes agent.  The plugin route is intentional:",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_53",
+      "label": "Query monitoring targets, active alerts, and alert rules.",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L53",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_99",
+      "label": "Return the private, persistent state directory owned by Hermes.",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_112",
+      "label": "Create the agent key once and return its public half and creation state.",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L112",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_139",
+      "label": "Normalize an OpenSSH key for comparison without its optional comment.      Warpg",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L139",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_226",
+      "label": "Run a command with Hermes' private key through a named Warpgate target.",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L226",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_284",
+      "label": "Manage agent SSH access through Warpgate's admin API.      The configured WARPGA",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L284",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_427",
+      "label": "Check OpenSRE health or request an incident investigation.",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L427",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_455",
+      "label": "Read or manage maintenance windows in Modern Collector.      Maintenance is time",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L455",
+      "_origin": "ast"
+    },
+    {
+      "id": "plugins_nimbox_sre_init_rationale_534",
+      "label": "Register the NimBox integrations in a plugin-owned toolset.",
+      "file_type": "rationale",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L534",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_nimelectric_telegram_agent",
+      "label": "nimelectric-telegram-agent",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "python",
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "version": "0.1.0",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "dotenv",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "agent_nightingaleclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_nightingaleclient",
+      "target": "agent_nightingaleclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_nightingaleclient",
+      "target": "agent_nightingaleclient_get_targets",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_nightingaleclient",
+      "target": "agent_nightingaleclient_get_alerts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "agent_warpgateclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_warpgateclient",
+      "target": "agent_warpgateclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_warpgateclient",
+      "target": "agent_warpgateclient_create_ticket",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "agent_wikimanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager",
+      "target": "agent_wikimanager_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager_init",
+      "target": "agent_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager",
+      "target": "agent_wikimanager_log_entry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager",
+      "target": "agent_wikimanager_create_incident",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager",
+      "target": "agent_wikimanager_create_runbook",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "agent_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent",
+      "target": "asyncio",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager_create_incident",
+      "target": "agent_wikimanager_log_entry",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_wikimanager_create_runbook",
+      "target": "agent_wikimanager_log_entry",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_main",
+      "target": "agent_nightingaleclient",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_main",
+      "target": "agent_warpgateclient",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_main",
+      "target": "agent_wikimanager",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_main",
+      "target": "agent_nightingaleclient_get_targets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_main",
+      "target": "agent_nightingaleclient_get_alerts",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_main",
+      "target": "agent_wikimanager_log_entry",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_rationale_28",
+      "target": "agent_nightingaleclient",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_rationale_46",
+      "target": "agent_warpgateclient",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_rationale_65",
+      "target": "agent_wikimanager",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_rationale_76",
+      "target": "agent_wikimanager_log_entry",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_rationale_84",
+      "target": "agent_wikimanager_create_incident",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "agent_rationale_130",
+      "target": "agent_main",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "agent.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config",
+      "target": "pydantic_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config",
+      "target": "app_config_settings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config_settings",
+      "target": "basesettings",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config",
+      "target": "app_config_config",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config_settings",
+      "target": "app_config_settings_output_path",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config_settings_output_path",
+      "target": "app_config_py_path",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_config_settings_output_path",
+      "target": "app_config_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/config.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "app_models",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "app_report_builder",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "home_tuxed_nimbox_sre_app_simulator_py",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "agno_agent",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "agno_models_openai_like",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "app_conversation_agent_build_conversation_agent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent_build_conversation_agent",
+      "target": "app_conversation_agent_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "app_conversation_agent_is_configured",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "fastapi_responses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "dotenv",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_nightingaleclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_nightingaleclient",
+      "target": "app_main_nightingaleclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_nightingaleclient",
+      "target": "app_main_nightingaleclient_get_targets",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_nightingaleclient",
+      "target": "app_main_nightingaleclient_get_alerts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_warpgateclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_warpgateclient",
+      "target": "app_main_warpgateclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_warpgateclient",
+      "target": "app_main_warpgateclient_get_targets",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_warpgateclient",
+      "target": "app_main_warpgateclient_create_ticket",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_wikimanager",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_wikimanager",
+      "target": "app_main_wikimanager_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_wikimanager_init",
+      "target": "app_main_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_wikimanager",
+      "target": "app_main_wikimanager_log_entry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_root",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_root",
+      "target": "app_main_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_health",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_health",
+      "target": "app_main_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_list_targets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_list_alerts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_list_warpgate_targets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_create_ticket",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main",
+      "target": "app_main_telegram_webhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_telegram_webhook",
+      "target": "request",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_list_targets",
+      "target": "app_main_warpgateclient_get_targets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_list_alerts",
+      "target": "app_main_nightingaleclient_get_alerts",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_list_warpgate_targets",
+      "target": "app_main_warpgateclient_get_targets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_telegram_webhook",
+      "target": "app_main_warpgateclient_get_targets",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_main_telegram_webhook",
+      "target": "app_main_nightingaleclient_get_alerts",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/main.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "app_models_hoststatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_hoststatus",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "app_models_alert",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_alert",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "app_models_investigation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_investigation",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models",
+      "target": "app_models_ticketrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_ticketrequest",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_rationale_7",
+      "target": "app_models_hoststatus",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_rationale_18",
+      "target": "app_models_alert",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_rationale_31",
+      "target": "app_models_investigation",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_models_rationale_40",
+      "target": "app_models_ticketrequest",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/models.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client",
+      "target": "app_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client",
+      "target": "app_nightingale_client_nightingaleclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_nightingaleclient",
+      "target": "app_nightingale_client_nightingaleclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_nightingaleclient",
+      "target": "app_nightingale_client_nightingaleclient_get_targets",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_nightingaleclient",
+      "target": "app_nightingale_client_nightingaleclient_get_target",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_nightingaleclient",
+      "target": "app_nightingale_client_nightingaleclient_get_active_alerts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_nightingaleclient",
+      "target": "app_nightingale_client_nightingaleclient_get_alert_rules",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_nightingaleclient",
+      "target": "app_nightingale_client_nightingaleclient_get_busi_groups",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_rationale_1",
+      "target": "app_nightingale_client",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_rationale_17",
+      "target": "app_nightingale_client_nightingaleclient_get_targets",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_nightingale_client_rationale_24",
+      "target": "app_nightingale_client_nightingaleclient_get_target",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/nightingale_client.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "importlib_util",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_models",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_load_report_script",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_annualize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_normalize_tariff",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_map_consumption_for_report",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_map_power_for_report",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_build_report_payload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_build_report_payload",
+      "target": "analysiscontext",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_build_report_payload",
+      "target": "app_report_builder_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_generate_report_pdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_generate_report_pdf",
+      "target": "analysiscontext",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_generate_report_pdf",
+      "target": "app_report_builder_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_generate_report_pdf",
+      "target": "app_report_builder_py_path",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_generate_report_pdf",
+      "target": "app_report_builder_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder",
+      "target": "app_report_builder_save_report_payload",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_save_report_payload",
+      "target": "app_report_builder_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_save_report_payload",
+      "target": "app_report_builder_py_path",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_save_report_payload",
+      "target": "app_report_builder_py_path",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_build_report_payload",
+      "target": "app_report_builder_normalize_tariff",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_build_report_payload",
+      "target": "app_report_builder_annualize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_build_report_payload",
+      "target": "app_report_builder_map_consumption_for_report",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_build_report_payload",
+      "target": "app_report_builder_map_power_for_report",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_generate_report_pdf",
+      "target": "app_report_builder_load_report_script",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_report_builder_generate_report_pdf",
+      "target": "app_report_builder_build_report_payload",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/report_builder.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage",
+      "target": "sqlite3",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage",
+      "target": "app_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage",
+      "target": "app_storage_statestore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore",
+      "target": "app_storage_statestore_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore",
+      "target": "app_storage_statestore_conn",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_conn",
+      "target": "connection",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore",
+      "target": "app_storage_statestore_init_db",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore",
+      "target": "app_storage_statestore_get",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_get",
+      "target": "app_storage_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore",
+      "target": "app_storage_statestore_set",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_set",
+      "target": "app_storage_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore",
+      "target": "app_storage_statestore_clear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_init",
+      "target": "app_storage_statestore_init_db",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_init_db",
+      "target": "app_storage_statestore_conn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_get",
+      "target": "app_storage_statestore_conn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_set",
+      "target": "app_storage_statestore_conn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_storage_statestore_clear",
+      "target": "app_storage_statestore_conn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/storage.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client",
+      "target": "requests",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client",
+      "target": "app_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client",
+      "target": "app_models",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client",
+      "target": "app_telegram_client_telegramclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_post",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_post",
+      "target": "app_telegram_client_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_post",
+      "target": "app_telegram_client_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_post",
+      "target": "app_telegram_client_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_post",
+      "target": "app_telegram_client_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_send_message",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_send_message",
+      "target": "app_telegram_client_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_send_document",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_answer_callback",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_get_file",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_get_file",
+      "target": "telegramfile",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient",
+      "target": "app_telegram_client_telegramclient_set_webhook",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_set_webhook",
+      "target": "app_telegram_client_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_send_message",
+      "target": "app_telegram_client_telegramclient_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_send_document",
+      "target": "app_telegram_client_telegramclient_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_answer_callback",
+      "target": "app_telegram_client_telegramclient_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_get_file",
+      "target": "app_telegram_client_telegramclient_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_get_file",
+      "target": "telegramfile",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_telegram_client_telegramclient_set_webhook",
+      "target": "app_telegram_client_telegramclient_post",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/telegram_client.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client",
+      "target": "app_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client",
+      "target": "app_warpgate_client_warpgateclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_warpgateclient",
+      "target": "app_warpgate_client_warpgateclient_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_warpgateclient",
+      "target": "app_warpgate_client_warpgateclient_get_targets",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_warpgateclient",
+      "target": "app_warpgate_client_warpgateclient_create_ticket",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_warpgateclient",
+      "target": "app_warpgate_client_warpgateclient_get_ticket_requests",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_rationale_1",
+      "target": "app_warpgate_client",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_rationale_17",
+      "target": "app_warpgate_client_warpgateclient_get_targets",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_rationale_24",
+      "target": "app_warpgate_client_warpgateclient_create_ticket",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_warpgate_client_rationale_42",
+      "target": "app_warpgate_client_warpgateclient_get_ticket_requests",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/warpgate_client.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_ensure_state_permissions",
+      "target": "docker_ensure_state_permissions_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/ensure-state-permissions.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_setup_model",
+      "target": "docker_setup_model_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_setup_model",
+      "target": "docker_setup_model_openai_api_key",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_setup_model",
+      "target": "docker_setup_model_openai_base_url",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_setup_model",
+      "target": "docker_setup_model_openai_model",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/setup-model.sh",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_start_gateway",
+      "target": "docker_start_gateway_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/start-gateway.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool",
+      "target": "docker_tools_nightingale_tool_check_nightingale_requirements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool",
+      "target": "docker_tools_nightingale_tool_nightingale_tool",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool",
+      "target": "tools_registry",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool_rationale_1",
+      "target": "docker_tools_nightingale_tool",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool_rationale_10",
+      "target": "docker_tools_nightingale_tool_check_nightingale_requirements",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_nightingale_tool_rationale_15",
+      "target": "docker_tools_nightingale_tool_nightingale_tool",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/nightingale_tool.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool",
+      "target": "docker_tools_opensre_tool_check_opensre_requirements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool",
+      "target": "docker_tools_opensre_tool_opensre_tool",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool",
+      "target": "tools_registry",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool_rationale_1",
+      "target": "docker_tools_opensre_tool",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool_rationale_10",
+      "target": "docker_tools_opensre_tool_check_opensre_requirements",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_opensre_tool_rationale_15",
+      "target": "docker_tools_opensre_tool_opensre_tool",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/opensre_tool.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_toolsets_rationale_1",
+      "target": "docker_tools_toolsets",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/toolsets.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool",
+      "target": "docker_tools_warpgate_tool_check_warpgate_requirements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool",
+      "target": "docker_tools_warpgate_tool_warpgate_tool",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool",
+      "target": "tools_registry",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool_rationale_1",
+      "target": "docker_tools_warpgate_tool",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool_rationale_10",
+      "target": "docker_tools_warpgate_tool_check_warpgate_requirements",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docker_tools_warpgate_tool_rationale_15",
+      "target": "docker_tools_warpgate_tool_warpgate_tool",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "docker/tools/warpgate_tool.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "stat",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "tempfile",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "httpx",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_result",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_error",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_error",
+      "target": "exception",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_nightingale_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_warpgate_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_opensre_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_maintenance_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_nightingale",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_nightingale",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_warpgate_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate_json",
+      "target": "response",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate_json",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_find_by_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_find_by_name",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_find_by_name",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_ticket_store_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_ticket_store_path",
+      "target": "plugins_nimbox_sre_init_py_path",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_state_dir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_state_dir",
+      "target": "plugins_nimbox_sre_init_py_path",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_agent_key_paths",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_agent_key_paths",
+      "target": "plugins_nimbox_sre_init_py_path",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_agent_key_paths",
+      "target": "plugins_nimbox_sre_init_py_path",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_ensure_agent_ssh_key",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_public_key_material",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_save_ticket_secret",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_load_ticket_secret",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_delete_ticket_secret",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_redact",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_run_agent_ssh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L225",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_warpgate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_opensre",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L426",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_opensre",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L426",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_maintenance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L445",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_maintenance",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L445",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init",
+      "target": "plugins_nimbox_sre_init_register",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L533",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_py_any",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L533",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_error",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_nightingale",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_nightingale",
+      "target": "plugins_nimbox_sre_init_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_ticket_store_path",
+      "target": "plugins_nimbox_sre_init_state_dir",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_state_dir",
+      "target": "plugins_nimbox_sre_init_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_agent_key_paths",
+      "target": "plugins_nimbox_sre_init_state_dir",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_ensure_agent_ssh_key",
+      "target": "plugins_nimbox_sre_init_agent_key_paths",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_save_ticket_secret",
+      "target": "plugins_nimbox_sre_init_ticket_store_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_load_ticket_secret",
+      "target": "plugins_nimbox_sre_init_ticket_store_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_delete_ticket_secret",
+      "target": "plugins_nimbox_sre_init_ticket_store_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "target": "plugins_nimbox_sre_init_load_ticket_secret",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "target": "plugins_nimbox_sre_init_ticket_store_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "target": "plugins_nimbox_sre_init_redact",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L217",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "target": "plugins_nimbox_sre_init_py_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_agent_ssh",
+      "target": "plugins_nimbox_sre_init_agent_key_paths",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_agent_ssh",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L229",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_run_agent_ssh",
+      "target": "plugins_nimbox_sre_init_ticket_store_path",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_warpgate_json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L303",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_find_by_name",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L304",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L306",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_ensure_agent_ssh_key",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L307",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_public_key_material",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L311",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_save_ticket_secret",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L384",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_run_ticket_ssh",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L389",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_run_agent_ssh",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L393",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_delete_ticket_secret",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L399",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_warpgate",
+      "target": "plugins_nimbox_sre_init_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L423",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_opensre",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L435",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_opensre",
+      "target": "plugins_nimbox_sre_init_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L442",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_maintenance",
+      "target": "plugins_nimbox_sre_init_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L463",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_maintenance",
+      "target": "plugins_nimbox_sre_init_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L503",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_nightingale_ready",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L535",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_nightingale",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L535",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_warpgate_ready",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L536",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_warpgate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L536",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_opensre_ready",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L537",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_opensre",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L537",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_maintenance_ready",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L538",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_register",
+      "target": "plugins_nimbox_sre_init_maintenance",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L538",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_1",
+      "target": "plugins_nimbox_sre_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_53",
+      "target": "plugins_nimbox_sre_init_nightingale",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_99",
+      "target": "plugins_nimbox_sre_init_state_dir",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_112",
+      "target": "plugins_nimbox_sre_init_ensure_agent_ssh_key",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_139",
+      "target": "plugins_nimbox_sre_init_public_key_material",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_226",
+      "target": "plugins_nimbox_sre_init_run_agent_ssh",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_284",
+      "target": "plugins_nimbox_sre_init_warpgate",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L284",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_427",
+      "target": "plugins_nimbox_sre_init_opensre",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L427",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_455",
+      "target": "plugins_nimbox_sre_init_maintenance",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L455",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "plugins_nimbox_sre_init_rationale_534",
+      "target": "plugins_nimbox_sre_init_register",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "plugins/nimbox_sre/__init__.py",
+      "source_location": "L534",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_fastapi",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_uvicorn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_pypdf",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_requests",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_reportlab",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_pydantic",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_pytesseract",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_pillow",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_agno",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_nimelectric_telegram_agent",
+      "target": "pkg_openai",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent",
+      "target": "app_report_builder_generate_report_pdf",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_conversation_agent_build_conversation_agent",
+      "target": "app_report_builder_generate_report_pdf",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/conversation_agent.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

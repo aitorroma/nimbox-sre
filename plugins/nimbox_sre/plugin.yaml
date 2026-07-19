@@ -1,0 +1,12 @@
+name: nimbox_sre
+version: 0.1.0
+description: "NimBox SRE integrations for Nightingale monitoring, Warpgate access, and OpenSRE investigations."
+author: NimBox
+# This plugin is baked into the Hermes image, so backend makes Hermes load it
+# without requiring an operator to edit plugins.enabled on the data volume.
+kind: backend
+provides_tools:
+  - nightingale
+  - warpgate
+  - opensre
+  - maintenance

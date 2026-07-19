@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  hermes:
+    image: tuxed/nimbox-sre-hermes:latest
+    networks:
+      - Nimbox360
+    environment:
+      TZ: ${TZ:-Europe/Madrid}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_ALLOWED_USERS: ${TELEGRAM_ALLOWED_USERS}
+      TELEGRAM_ALERT_CHAT_ID: ${TELEGRAM_ALERT_CHAT_ID}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-https://api.nan.builders/v1}
+      OPENAI_MODEL: ${OPENAI_MODEL:-qwen3.6}
+      NIGHTINGALE_API_URL: ${NIGHTINGALE_API_URL}
+      NIGHTINGALE_TOKEN: ${NIGHTINGALE_TOKEN}
+      WARPGATE_API_URL: ${WARPGATE_API_URL}
+      WARPGATE_TOKEN: ${WARPGATE_TOKEN}
+      OPENSRE_URL: ${OPENSRE_URL}
+      MONIT_API_URL: ${MONIT_API_URL}
+      MONIT_API_TOKEN: ${MONIT_API_TOKEN}
+      WEBHOOK_ENABLED: "true"
+      WEBHOOK_PORT: "8644"
+      WEBHOOK_SECRET: ${ALERT_WEBHOOK_SECRET}
+    volumes:
+      - hermes_state:/opt/data
+      - hermes_data:/opt/hermes/data
+      - hermes_wiki:/opt/hermes/wiki
+      - /etc/localtime:/etc/localtime:ro
+    command: ["/opt/hermes/docker/start-gateway.sh"]
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+
+networks:
+  Nimbox360:
+    external: true
+    name: Nimbox360
+
+volumes:
+  hermes_state:
+  hermes_data:
+  hermes_wiki:

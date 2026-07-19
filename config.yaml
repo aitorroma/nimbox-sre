@@ -1,0 +1,53 @@
+# NimBox SRE Agent Configuration
+# Based on Hermes Agent pattern + Karpathy Wiki
+
+agent:
+  name: "nimbox-sre"
+  description: "AI SRE Agent for nimbox360 infrastructure"
+
+# LLM Configuration
+llm:
+  provider: "openai"
+  model: "qwen3.6"
+  api_key: "${LLM_API_KEY}"
+  base_url: "https://api.nan.builders/v1"
+
+# Telegram
+telegram:
+  bot_token: "${TELEGRAM_BOT_TOKEN}"
+  allowed_users:
+    - 8776348  # Aitor
+
+# MCP Servers
+mcp_servers:
+  nightingale:
+    url: "https://collector.nimbox360.com/mcp"
+    headers:
+      X-User-Token: "${NIGHTINGALE_TOKEN}"
+    toolsets: ["alerts", "targets"]
+  
+  warpgate:
+    command: "n9e-mcp-server"
+    args: ["stdio"]
+    env:
+      N9E_BASE_URL: "http://37.27.193.146:17000"
+      N9E_TOKEN: "${WARPGATE_TOKEN}"
+      N9E_TOOLSETS: "targets"
+
+# Wiki Configuration (Karpathy pattern)
+wiki:
+  enabled: true
+  path: "~/nimbox-sre/wiki"
+  auto_document: true
+  
+# Heartbeat
+heartbeat:
+  enabled: true
+  interval_minutes: 60
+  
+# Skills
+skills:
+  - sre-monitor
+  - incident-response
+  - auto-fix
+  - auto-doc
