@@ -49,6 +49,44 @@ def _maintenance_ready() -> bool:
     return bool(os.getenv("MONIT_API_TOKEN"))
 
 
+def _monit_alerts_ready() -> bool:
+    """The agent token may be split from the maintenance token in production."""
+    return bool(os.getenv("MONIT_AGENT_API_TOKEN") or os.getenv("MONIT_API_TOKEN"))
+
+
+def monit_alerts(
+    action: str,
+    incident_id: str | None = None,
+    **_: Any,
+) -> str:
+    """Read Modern Collector incidents generated from Monit reports.
+
+    This is intentionally read-only. Operational changes, ownership and
+    comments remain out of the agent's automatic alert-review path.
+    """
+    base_url = os.getenv("MONIT_API_URL", "https://monit.hiveagilectl.sh").rstrip("/")
+    token = os.getenv("MONIT_AGENT_API_TOKEN") or os.getenv("MONIT_API_TOKEN")
+    headers = {"Authorization": f"Bearer {token}"}
+
+    if action == "get" and not incident_id:
+        return _result({"ok": False, "service": "monit_alerts", "error": "incident_id is required for get"})
+
+    try:
+        with httpx.Client(timeout=_TIMEOUT) as client:
+            if action == "list_active":
+                response = client.get(f"{base_url}/api/incidents", headers=headers, params={"active_only": "true"})
+            elif action == "list_all":
+                response = client.get(f"{base_url}/api/incidents", headers=headers, params={"active_only": "false"})
+            elif action == "get":
+                response = client.get(f"{base_url}/api/incidents/{incident_id}", headers=headers)
+            else:
+                return _result({"ok": False, "service": "monit_alerts", "error": f"unknown action: {action}"})
+            response.raise_for_status()
+        return _result({"ok": True, "service": "monit_alerts", "action": action, "incident_id": incident_id, "data": response.json()})
+    except Exception as exc:
+        return _error("monit_alerts", exc)
+
+
 def nightingale(action: str, target_id: str | None = None, **_: Any) -> str:
     """Query monitoring targets, active alerts, and alert rules."""
     base_url = os.getenv("NIGHTINGALE_API_URL", "https://collector.nimbox360.com/api/n9e").rstrip("/")
@@ -528,6 +566,11 @@ MAINTENANCE_SCHEMA = {
     "description": "Consulta ventanas de mantenimiento del Modern Collector. Activar o desactivar mantenimiento cambia el estado operativo y requiere confirmación explícita del usuario.",
     "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list", "get", "enable", "disable"]}, "hostname": {"type": "string", "description": "Host requerido para get, enable y disable."}, "duration_minutes": {"type": "integer", "minimum": 1, "maximum": 10080, "description": "Duración acotada de mantenimiento; usar exactamente una forma de expiración."}, "duration_seconds": {"type": "integer", "minimum": 60, "maximum": 604800, "description": "Alternativa de duración en segundos."}, "until": {"type": "string", "description": "Alternativa de expiración ISO-8601 con zona horaria."}, "reason": {"type": "string", "description": "Motivo obligatorio al activar mantenimiento."}, "requested_by": {"type": "string", "default": "nimbox-sre", "description": "Identidad registrada por Modern Collector."}}, "required": ["action"]},
 }
+MONIT_ALERTS_SCHEMA = {
+    "name": "monit_alerts",
+    "description": "Consulta las incidencias y alertas generadas por Modern Collector a partir de Monit. Para una petición de alertas activas, úsala junto con nightingale(list_alerts). Es de solo lectura.",
+    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_active", "list_all", "get"]}, "incident_id": {"type": "string", "description": "ID de incidente de Modern Collector; obligatorio para get."}}, "required": ["action"]},
+}
 
 
 def register(ctx: Any) -> None:
@@ -536,3 +579,4 @@ def register(ctx: Any) -> None:
     ctx.register_tool(name="warpgate", toolset="nimbox_sre", schema=WARPGATE_SCHEMA, handler=lambda args, **kw: warpgate(**args, **kw), check_fn=_warpgate_ready, requires_env=["WARPGATE_TOKEN"], emoji="🔐")
     ctx.register_tool(name="opensre", toolset="nimbox_sre", schema=OPENSRE_SCHEMA, handler=lambda args, **kw: opensre(**args, **kw), check_fn=_opensre_ready, requires_env=["OPENSRE_URL"], emoji="🩺")
     ctx.register_tool(name="maintenance", toolset="nimbox_sre", schema=MAINTENANCE_SCHEMA, handler=lambda args, **kw: maintenance(**args, **kw), check_fn=_maintenance_ready, requires_env=["MONIT_API_TOKEN"], emoji="🛠️")
+    ctx.register_tool(name="monit_alerts", toolset="nimbox_sre", schema=MONIT_ALERTS_SCHEMA, handler=lambda args, **kw: monit_alerts(**args, **kw), check_fn=_monit_alerts_ready, requires_env=["MONIT_AGENT_API_TOKEN|MONIT_API_TOKEN"], emoji="🚨")

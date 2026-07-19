@@ -10,8 +10,8 @@ intervenciones controladas mediante Warpgate.
 - **OpenSRE**: investigación y diagnóstico de incidencias.
 - **Warpgate**: tickets, targets y acceso SSH controlado con clave persistente
   del agente.
-- **Modern Collector**: consulta y gestión confirmada de ventanas de
-  mantenimiento.
+- **Modern Collector / Monit**: consulta de incidencias activas y gestión
+  confirmada de ventanas de mantenimiento.
 - **Webhook HMAC**: despierta Hermes de inmediato cuando Modern Collector abre
   una incidencia.
 - **Telegram**: canal de interacción, avisos y ejecución del heartbeat.
@@ -57,7 +57,7 @@ Variables principales:
 | Modelo | `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `OPENAI_MODEL` |
 | Observabilidad | `NIGHTINGALE_API_URL`, `NIGHTINGALE_TOKEN`, `OPENSRE_URL` |
 | Acceso | `WARPGATE_API_URL`, `WARPGATE_TOKEN` |
-| Mantenimiento | `MONIT_API_URL`, `MONIT_API_TOKEN` |
+| Modern Collector / Monit | `MONIT_API_URL`, `MONIT_API_TOKEN` (o `MONIT_AGENT_API_TOKEN` para la API de incidencias) |
 | Webhook | `ALERT_WEBHOOK_SECRET` |
 
 `ALERT_WEBHOOK_SECRET` es el secreto HMAC compartido con Modern Collector. En
