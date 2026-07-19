@@ -101,7 +101,7 @@ un puerto público para recibir eventos del servicio `monit` de la misma red.
 El emisor de alertas y API de mantenimiento está en
 [Modern Collector](https://github.com/aitorroma/modern-collector).
 
-En los servicios `monit` y `telegram-polling` de Modern Collector configure:
+En el servicio `monit` de Modern Collector configure:
 
 ```yaml
 ALERT_WEBHOOK_URL: http://hermes:8644/webhooks/modern-collector-alerts

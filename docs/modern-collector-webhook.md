@@ -13,9 +13,8 @@ these headers when `ALERT_WEBHOOK_URL` and `ALERT_WEBHOOK_SECRET` are set.
 ## Recommended deployment: same Swarm overlay
 
 Deploy Hermes with `docker-stack.yml` as a service attached to the external
-`Nimbox360` overlay. Its stable service name is `hermes`. Then add this to both
-the `monit` and `telegram-polling` services' environment in the Modern
-Collector stack:
+`Nimbox360` overlay. Its stable service name is `hermes`. Then add this to the
+`monit` service environment in the Modern Collector stack:
 
 ```yaml
 - ALERT_WEBHOOK_URL=http://hermes:8644/webhooks/modern-collector-alerts
