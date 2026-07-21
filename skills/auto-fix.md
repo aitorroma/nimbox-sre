@@ -6,7 +6,7 @@ Ejecuta arreglos automáticos en servidores.
 ## Prerequisitos
 - Host y síntoma verificados en Nightingale.
 - Hipótesis y efecto esperado documentados en el incidente.
-- Acceso con `warpgate(action="run_agent_ssh_command")`.
+- Acceso con un ticket Warpgate efímero y `warpgate(action="run_ssh_command")`; no generes ni instales claves SSH.
 - Runbook aprobado o confirmación explícita para ejecutar un cambio.
 
 ## Fixes disponibles

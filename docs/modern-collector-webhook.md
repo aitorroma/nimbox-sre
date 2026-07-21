@@ -50,7 +50,10 @@ collector network/IPs when possible.
 
 ## Behaviour
 
-On a valid event Hermes wakes immediately, first checks the maintenance window
-for the host, then collects read-only Nightingale/OpenSRE evidence.  It does
-not create access tickets, run SSH commands, or change systems without an
-explicit confirmation.
+On a valid firing event Hermes first checks the maintenance window. If none is
+active and it starts an automatic diagnosis, it creates a 30-minute maintenance
+window labelled with the incident and service; it is not renewed and expires by
+itself. Hermes then gathers read-only Nightingale/OpenSRE evidence and may use
+an ephemeral Warpgate ticket for read-only host diagnostics. It never provisions
+or installs SSH keys, and it does not apply changes or restarts without explicit
+confirmation.

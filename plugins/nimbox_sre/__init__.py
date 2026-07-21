@@ -57,19 +57,21 @@ def _monit_alerts_ready() -> bool:
 def monit_alerts(
     action: str,
     incident_id: str | None = None,
+    agent_id: str = "nimbox-sre",
+    agent_name: str = "NimBox SRE",
+    note: str | None = None,
+    message: str | None = None,
     **_: Any,
 ) -> str:
-    """Read Modern Collector incidents generated from Monit reports.
-
-    This is intentionally read-only. Operational changes, ownership and
-    comments remain out of the agent's automatic alert-review path.
-    """
+    """Access the complete Modern Collector incident API."""
     base_url = os.getenv("MONIT_API_URL", "https://monit.hiveagilectl.sh").rstrip("/")
     token = os.getenv("MONIT_AGENT_API_TOKEN") or os.getenv("MONIT_API_TOKEN")
     headers = {"Authorization": f"Bearer {token}"}
 
-    if action == "get" and not incident_id:
-        return _result({"ok": False, "service": "monit_alerts", "error": "incident_id is required for get"})
+    if action in {"get", "claim", "release", "close", "comment"} and not incident_id:
+        return _result({"ok": False, "service": "monit_alerts", "error": f"incident_id is required for {action}"})
+    if action in {"close", "comment"} and not message:
+        return _result({"ok": False, "service": "monit_alerts", "error": f"message is required for {action}"})
 
     try:
         with httpx.Client(timeout=_TIMEOUT) as client:
@@ -79,6 +81,16 @@ def monit_alerts(
                 response = client.get(f"{base_url}/api/incidents", headers=headers, params={"active_only": "false"})
             elif action == "get":
                 response = client.get(f"{base_url}/api/incidents/{incident_id}", headers=headers)
+            elif action == "claim":
+                response = client.post(f"{base_url}/api/incidents/{incident_id}/claim", headers=headers, json={"agent_id": agent_id, "agent_name": agent_name, "note": note})
+            elif action == "release":
+                response = client.post(f"{base_url}/api/incidents/{incident_id}/release", headers=headers, json={"agent_id": agent_id})
+            elif action == "close":
+                response = client.post(f"{base_url}/api/incidents/{incident_id}/close", headers=headers, json={"message": message})
+            elif action == "comment":
+                response = client.post(f"{base_url}/api/incidents/{incident_id}/comments", headers=headers, json={"agent_id": agent_id, "agent_name": agent_name, "message": message})
+            elif action == "list_archived_hosts":
+                response = client.get(f"{base_url}/api/hosts/archived", headers=headers)
             else:
                 return _result({"ok": False, "service": "monit_alerts", "error": f"unknown action: {action}"})
             response.raise_for_status()
@@ -87,8 +99,111 @@ def monit_alerts(
         return _error("monit_alerts", exc)
 
 
-def nightingale(action: str, target_id: str | None = None, **_: Any) -> str:
-    """Query monitoring targets, active alerts, and alert rules."""
+def runbooks(
+    action: str,
+    runbook_id: str | None = None,
+    name: str | None = None,
+    description: str = "",
+    match: dict[str, Any] | None = None,
+    prerequisites: str = "",
+    steps: list[str] | None = None,
+    allowed_actions: list[str] | None = None,
+    rollback: str = "",
+    **_: Any,
+) -> str:
+    """Create drafts and retrieve approved Modern Collector runbooks.
+
+    Hermes can propose a runbook but deliberately has no approval/revocation
+    operation: that decision is made by an authenticated human in Collector.
+    """
+    base_url = os.getenv("MONIT_API_URL", "https://monit.hiveagilectl.sh").rstrip("/")
+    token = os.getenv("MONIT_AGENT_API_TOKEN") or os.getenv("MONIT_API_TOKEN")
+    headers = {"Authorization": f"Bearer {token}"}
+    if action in {"get_approved", "update_draft"} and not runbook_id:
+        return _result({"ok": False, "service": "runbooks", "error": f"runbook_id is required for {action}"})
+    if action == "create_draft" and not name:
+        return _result({"ok": False, "service": "runbooks", "error": "name is required for create_draft"})
+    try:
+        with httpx.Client(timeout=_TIMEOUT) as client:
+            if action == "list_approved":
+                response = client.get(f"{base_url}/api/runbooks", headers=headers, params={"status": "approved"})
+            elif action == "get_approved":
+                response = client.get(f"{base_url}/api/runbooks/{runbook_id}", headers=headers)
+            elif action == "create_draft":
+                response = client.post(f"{base_url}/api/runbooks", headers=headers, json={
+                    "name": name, "description": description, "match": match or {},
+                    "prerequisites": prerequisites, "steps": steps or [],
+                    "allowed_actions": allowed_actions or [], "rollback": rollback,
+                    "created_by": "nimbox-sre",
+                })
+            elif action == "update_draft":
+                response = client.put(f"{base_url}/api/runbooks/{runbook_id}", headers=headers, json={
+                    "name": name or "", "description": description, "match": match or {},
+                    "prerequisites": prerequisites, "steps": steps or [],
+                    "allowed_actions": allowed_actions or [], "rollback": rollback,
+                })
+            else:
+                return _result({"ok": False, "service": "runbooks", "error": f"unknown action: {action}"})
+            response.raise_for_status()
+        return _result({"ok": True, "service": "runbooks", "action": action, "data": response.json()})
+    except Exception as exc:
+        return _error("runbooks", exc)
+
+
+def _nightingale_prometheus_datasource(client: httpx.Client, base_url: str, headers: dict[str, str]) -> dict[str, Any]:
+    """Return the enabled Prometheus datasource without hardcoding its ID."""
+    response = client.post(f"{base_url}/datasource/list", headers=headers, json={"p": 1, "limit": 200})
+    response.raise_for_status()
+    datasources = response.json().get("data", [])
+    prometheus = [item for item in datasources if item.get("plugin_type") == "prometheus" and item.get("status") == "enabled"]
+    if not prometheus:
+        raise RuntimeError("no enabled Prometheus datasource is configured in Nightingale")
+    return next((item for item in prometheus if item.get("name") == "prometheus"), prometheus[0])
+
+
+def _nightingale_prometheus_query(client: httpx.Client, base_url: str, headers: dict[str, str], datasource_id: int, query: str) -> list[dict[str, Any]]:
+    response = client.get(f"{base_url}/proxy/{datasource_id}/api/v1/query", headers=headers, params={"query": query})
+    response.raise_for_status()
+    payload = response.json()
+    if payload.get("status") != "success":
+        raise RuntimeError(payload.get("error") or "Prometheus query did not succeed")
+    return payload.get("data", {}).get("result", [])
+
+
+def _prometheus_value(item: dict[str, Any]) -> float:
+    return float(item["value"][1])
+
+
+def _monit_host_summary(series: list[dict[str, Any]], host: str) -> dict[str, Any]:
+    summary: dict[str, Any] = {"host": host, "disks": [], "inodes": [], "down_services": [], "incident_counts": []}
+    service_total = service_up = 0
+    for item in series:
+        metric = item.get("metric", {})
+        name = metric.get("__name__")
+        value = _prometheus_value(item)
+        if name == "monit_service_up":
+            service_total += 1
+            service_up += int(value == 1)
+            if value != 1:
+                summary["down_services"].append(metric.get("service", "unknown"))
+        elif name == "monit_disk_percent":
+            summary["disks"].append({"mountpoint": metric.get("mountpoint", metric.get("filesystem", "unknown")), "percent": value})
+        elif name == "monit_inode_percent":
+            summary["inodes"].append({"mountpoint": metric.get("mountpoint", metric.get("filesystem", "unknown")), "percent": value})
+        elif name == "monit_system_load":
+            summary.setdefault("system_load", {})[metric.get("period", "unknown")] = value
+        elif name == "monit_incident_count":
+            summary["incident_counts"].append({"severity": metric.get("severity", "unknown"), "count": value})
+        elif name and name.startswith("monit_"):
+            summary[name.removeprefix("monit_")] = value
+    summary["services"] = {"up": service_up, "total": service_total, "down": len(summary["down_services"])}
+    summary["disks"].sort(key=lambda disk: disk["percent"], reverse=True)
+    summary["inodes"].sort(key=lambda inode: inode["percent"], reverse=True)
+    return summary
+
+
+def nightingale(action: str, target_id: str | None = None, host: str | None = None, **_: Any) -> str:
+    """Query Nightingale targets, alerts, rules, and Monit/Prometheus status."""
     base_url = os.getenv("NIGHTINGALE_API_URL", "https://collector.nimbox360.com/api/n9e").rstrip("/")
     endpoints = {
         "list_targets": "/targets",
@@ -101,13 +216,34 @@ def nightingale(action: str, target_id: str | None = None, **_: Any) -> str:
         if not target_id:
             return _result({"ok": False, "service": "nightingale", "error": "target_id is required for get_target"})
         path = f"/targets/{target_id}"
+    elif action in {"list_monit_hosts", "get_monit_host_status"}:
+        path = None
     else:
         path = endpoints.get(action)
-    if not path:
+    if action == "get_monit_host_status" and not host:
+        return _result({"ok": False, "service": "nightingale", "error": "host is required for get_monit_host_status"})
+    if action not in {"list_monit_hosts", "get_monit_host_status"} and not path:
         return _result({"ok": False, "service": "nightingale", "error": f"unknown action: {action}"})
     try:
         with httpx.Client(timeout=_TIMEOUT) as client:
-            response = client.get(f"{base_url}{path}", headers={"Authorization": f"Bearer {os.environ['NIGHTINGALE_TOKEN']}"})
+            headers = {"X-User-Token": os.environ["NIGHTINGALE_TOKEN"]}
+            if action in {"list_monit_hosts", "get_monit_host_status"}:
+                datasource = _nightingale_prometheus_datasource(client, base_url, headers)
+                datasource_id = datasource["id"]
+                if action == "list_monit_hosts":
+                    series = _nightingale_prometheus_query(client, base_url, headers, datasource_id, '{__name__=~"monit_(host_up|maintenance_active|host_archived)",job="monit_hiveagilectl"}')
+                    hosts: dict[str, dict[str, Any]] = {}
+                    for item in series:
+                        metric = item.get("metric", {})
+                        hostname = metric.get("host")
+                        if hostname:
+                            hosts.setdefault(hostname, {"host": hostname})[metric["__name__"].removeprefix("monit_")] = _prometheus_value(item)
+                    return _result({"ok": True, "service": "nightingale", "action": action, "datasource": {"id": datasource_id, "name": datasource.get("name")}, "hosts": [hosts[name] for name in sorted(hosts)], "count": len(hosts)})
+                host_selector = json.dumps(host)
+                query = '{__name__=~"monit_(host_up|host_archived|maintenance_active|cpu_percent|mem_percent|swap_percent|uptime_seconds|system_load|disk_percent|inode_percent|service_up|incident_count|incident_total|response_time|collection_age_seconds|scrape_success)",job="monit_hiveagilectl",host=' + host_selector + '}'
+                series = _nightingale_prometheus_query(client, base_url, headers, datasource_id, query)
+                return _result({"ok": True, "service": "nightingale", "action": action, "datasource": {"id": datasource_id, "name": datasource.get("name")}, "data": _monit_host_summary(series, host)})
+            response = client.get(f"{base_url}{path}", headers=headers)
             response.raise_for_status()
         try:
             data = response.json()
@@ -486,14 +622,15 @@ def maintenance(
     duration_minutes: int | None = None,
     duration_seconds: int | None = None,
     until: str | None = None,
+    indefinite: bool = False,
     reason: str = "",
     requested_by: str = "nimbox-sre",
     **_: Any,
 ) -> str:
     """Read or manage maintenance windows in Modern Collector.
 
-    Maintenance is time-bounded by design: an enabled window needs an explicit
-    duration or expiry so a host cannot be muted indefinitely by accident.
+    An indefinite window is allowed only when ``indefinite=True`` is explicit.
+    It is deliberately never inferred from a missing expiry.
     """
     base_url = os.getenv("MONIT_API_URL", "https://monit.hiveagilectl.sh").rstrip("/")
     headers = {"Authorization": f"Bearer {os.environ['MONIT_API_TOKEN']}"}
@@ -501,8 +638,10 @@ def maintenance(
         return _result({"ok": False, "service": "maintenance", "error": f"hostname is required for {action}"})
     if action == "enable":
         expiry_fields = sum(value is not None for value in (duration_minutes, duration_seconds, until))
-        if expiry_fields != 1:
-            return _result({"ok": False, "service": "maintenance", "error": "enable requires exactly one of duration_minutes, duration_seconds, or until"})
+        if indefinite and expiry_fields != 0:
+            return _result({"ok": False, "service": "maintenance", "error": "indefinite maintenance cannot include duration_minutes, duration_seconds, or until"})
+        if not indefinite and expiry_fields != 1:
+            return _result({"ok": False, "service": "maintenance", "error": "enable requires exactly one expiry or indefinite=true"})
         if duration_minutes is not None and not 1 <= duration_minutes <= 10_080:
             return _result({"ok": False, "service": "maintenance", "error": "duration_minutes must be between 1 and 10080"})
         if duration_seconds is not None and not 60 <= duration_seconds <= 604_800:
@@ -517,7 +656,12 @@ def maintenance(
                 response = client.get(f"{base_url}/api/maintenance/{hostname}", headers=headers)
             elif action == "enable":
                 payload: dict[str, Any] = {"enabled": True, "reason": reason, "requested_by": requested_by}
-                if duration_minutes is not None:
+                if indefinite:
+                    # Modern Collector persists an omitted expiry as NULL.
+                    # Sending the explicit flag makes the intent visible in
+                    # audit/debug logs while remaining backward compatible.
+                    payload["indefinite"] = True
+                elif duration_minutes is not None:
                     payload["duration_minutes"] = duration_minutes
                 elif duration_seconds is not None:
                     payload["duration_seconds"] = duration_seconds
@@ -548,13 +692,13 @@ _ACTION_PROPERTY = {
 
 NIGHTINGALE_SCHEMA = {
     "name": "nightingale",
-    "description": "Consulta Nightingale para ver hosts monitorizados, alertas activas, reglas y el detalle de un host.",
-    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_targets", "get_target", "list_alerts", "list_alert_rules"]}, "target_id": {"type": "string", "description": "ID del host, obligatorio para get_target."}}, "required": ["action"]},
+    "description": "Consulta Nightingale para ver hosts, alertas, reglas y resúmenes operativos Monit/Prometheus. Todas las acciones son de solo lectura.",
+    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_targets", "get_target", "list_alerts", "list_alert_rules", "list_monit_hosts", "get_monit_host_status"]}, "target_id": {"type": "string", "description": "ID del host, obligatorio para get_target."}, "host": {"type": "string", "description": "Hostname de Monit/Prometheus, obligatorio para get_monit_host_status."}}, "required": ["action"]},
 }
 WARPGATE_SCHEMA = {
     "name": "warpgate",
-    "description": "Gestiona acceso SSH con la API admin de Warpgate. `run_agent_ssh_command` usa la clave privada persistente de Hermes con el usuario restringido agente. Los tickets se emiten por defecto para ese mismo usuario y, sin number_of_uses, pueden reutilizarse hasta expirar.",
-    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_targets", "list_users", "list_tickets", "list_ticket_requests", "get_ssh_client_keys", "provision_agent_ssh_key", "create_ticket", "run_ssh_command", "run_agent_ssh_command", "revoke_ticket", "create_ssh_target"]}, "username": {"type": "string", "default": "agente", "description": "Usuario receptor del ticket o de la clave; usa agente salvo instrucción explícita."}, "user_id": {"type": "string"}, "target_id": {"type": "string"}, "target_name": {"type": "string", "description": "Nombre del destino existente; obligatorio para run_agent_ssh_command."}, "ticket_id": {"type": "string", "description": "ID de un ticket creado por esta herramienta; requerido para run_ssh_command y revoke_ticket."}, "command": {"type": "string", "description": "Comando remoto no interactivo; requerido para las acciones de ejecución SSH."}, "duration": {"type": "integer", "minimum": 60, "maximum": 86400, "default": 3600}, "number_of_uses": {"type": "integer", "minimum": 1, "maximum": 100, "description": "Omitir para usos ilimitados durante la vigencia del ticket."}, "description": {"type": "string"}, "host": {"type": "string", "description": "IP o hostname SSH; obligatorio al crear un host."}, "port": {"type": "integer", "minimum": 1, "maximum": 65535, "default": 22}, "ssh_username": {"type": "string", "default": "root"}, "role_name": {"type": "string", "default": "agentes"}, "key_label": {"type": "string", "default": "nimbox-sre-hermes", "description": "Etiqueta de la credencial creada en Warpgate."}}, "required": ["action"]},
+    "description": "Gestiona diagnósticos SSH mediante tickets efímeros de Warpgate. No genera, sube ni instala claves SSH. Los tickets se emiten por defecto para `agente` y sus secretos quedan almacenados internamente.",
+    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_targets", "list_users", "list_tickets", "list_ticket_requests", "create_ticket", "run_ssh_command", "revoke_ticket"]}, "username": {"type": "string", "default": "agente", "description": "Usuario receptor del ticket; usa agente salvo instrucción explícita."}, "user_id": {"type": "string"}, "target_id": {"type": "string"}, "target_name": {"type": "string", "description": "Nombre del destino existente; permite resolver el target al crear un ticket."}, "ticket_id": {"type": "string", "description": "ID de un ticket creado por esta herramienta; requerido para run_ssh_command y revoke_ticket."}, "command": {"type": "string", "description": "Comando remoto no interactivo; en diagnóstico automático debe ser estrictamente de solo lectura."}, "duration": {"type": "integer", "minimum": 60, "maximum": 86400, "default": 3600}, "number_of_uses": {"type": "integer", "minimum": 1, "maximum": 100, "description": "Omitir para usos ilimitados durante la vigencia del ticket."}, "description": {"type": "string"}}, "required": ["action"]},
 }
 OPENSRE_SCHEMA = {
     "name": "opensre",
@@ -564,12 +708,17 @@ OPENSRE_SCHEMA = {
 MAINTENANCE_SCHEMA = {
     "name": "maintenance",
     "description": "Consulta ventanas de mantenimiento del Modern Collector. Activar o desactivar mantenimiento cambia el estado operativo y requiere confirmación explícita del usuario.",
-    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list", "get", "enable", "disable"]}, "hostname": {"type": "string", "description": "Host requerido para get, enable y disable."}, "duration_minutes": {"type": "integer", "minimum": 1, "maximum": 10080, "description": "Duración acotada de mantenimiento; usar exactamente una forma de expiración."}, "duration_seconds": {"type": "integer", "minimum": 60, "maximum": 604800, "description": "Alternativa de duración en segundos."}, "until": {"type": "string", "description": "Alternativa de expiración ISO-8601 con zona horaria."}, "reason": {"type": "string", "description": "Motivo obligatorio al activar mantenimiento."}, "requested_by": {"type": "string", "default": "nimbox-sre", "description": "Identidad registrada por Modern Collector."}}, "required": ["action"]},
+    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list", "get", "enable", "disable"]}, "hostname": {"type": "string", "description": "Host requerido para get, enable y disable."}, "duration_minutes": {"type": "integer", "minimum": 1, "maximum": 10080, "description": "Duración acotada de mantenimiento; usar exactamente una forma de expiración."}, "duration_seconds": {"type": "integer", "minimum": 60, "maximum": 604800, "description": "Alternativa de duración en segundos."}, "until": {"type": "string", "description": "Alternativa de expiración ISO-8601 con zona horaria."}, "indefinite": {"type": "boolean", "default": False, "description": "Activa mantenimiento sin caducidad. Debe ser true explícitamente y no puede combinarse con una expiración."}, "reason": {"type": "string", "description": "Motivo obligatorio al activar mantenimiento."}, "requested_by": {"type": "string", "default": "nimbox-sre", "description": "Identidad registrada por Modern Collector."}}, "required": ["action"]},
 }
 MONIT_ALERTS_SCHEMA = {
     "name": "monit_alerts",
-    "description": "Consulta las incidencias y alertas generadas por Modern Collector a partir de Monit. Para una petición de alertas activas, úsala junto con nightingale(list_alerts). Es de solo lectura.",
-    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_active", "list_all", "get"]}, "incident_id": {"type": "string", "description": "ID de incidente de Modern Collector; obligatorio para get."}}, "required": ["action"]},
+    "description": "Accede a toda la API de incidencias de Modern Collector: listar, leer, reclamar, liberar, comentar y consultar hosts archivados.",
+    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_active", "list_all", "get", "claim", "release", "close", "comment", "list_archived_hosts"]}, "incident_id": {"type": "string", "description": "ID de incidente; obligatorio para get, claim, release, close y comment."}, "agent_id": {"type": "string", "default": "nimbox-sre", "description": "Identidad registrada al reclamar, liberar o comentar."}, "agent_name": {"type": "string", "default": "NimBox SRE"}, "note": {"type": "string", "description": "Nota opcional al reclamar una incidencia."}, "message": {"type": "string", "description": "Evidencia final; obligatorio para close y comment."}}, "required": ["action"]},
+}
+RUNBOOKS_SCHEMA = {
+    "name": "runbooks",
+    "description": "Gestiona runbooks en Modern Collector. Hermes puede crear borradores y leer runbooks aprobados, pero nunca aprobarlos ni revocarlos.",
+    "parameters": {"type": "object", "properties": {"action": {**_ACTION_PROPERTY, "enum": ["list_approved", "get_approved", "create_draft", "update_draft"]}, "runbook_id": {"type": "string", "description": "ID obligatorio para get_approved y update_draft."}, "name": {"type": "string", "description": "Nombre obligatorio para create_draft; opcional al actualizar."}, "description": {"type": "string"}, "match": {"type": "object", "description": "Ámbito del runbook, por ejemplo host, service y kind."}, "prerequisites": {"type": "string"}, "steps": {"type": "array", "items": {"type": "string"}}, "allowed_actions": {"type": "array", "items": {"type": "string"}, "description": "Comandos exactos permitidos cuando el runbook sea aprobado."}, "rollback": {"type": "string"}}, "required": ["action"]},
 }
 
 
@@ -580,3 +729,4 @@ def register(ctx: Any) -> None:
     ctx.register_tool(name="opensre", toolset="nimbox_sre", schema=OPENSRE_SCHEMA, handler=lambda args, **kw: opensre(**args, **kw), check_fn=_opensre_ready, requires_env=["OPENSRE_URL"], emoji="🩺")
     ctx.register_tool(name="maintenance", toolset="nimbox_sre", schema=MAINTENANCE_SCHEMA, handler=lambda args, **kw: maintenance(**args, **kw), check_fn=_maintenance_ready, requires_env=["MONIT_API_TOKEN"], emoji="🛠️")
     ctx.register_tool(name="monit_alerts", toolset="nimbox_sre", schema=MONIT_ALERTS_SCHEMA, handler=lambda args, **kw: monit_alerts(**args, **kw), check_fn=_monit_alerts_ready, requires_env=["MONIT_AGENT_API_TOKEN|MONIT_API_TOKEN"], emoji="🚨")
+    ctx.register_tool(name="runbooks", toolset="nimbox_sre", schema=RUNBOOKS_SCHEMA, handler=lambda args, **kw: runbooks(**args, **kw), check_fn=_monit_alerts_ready, requires_env=["MONIT_AGENT_API_TOKEN|MONIT_API_TOKEN"], emoji="📘")

@@ -21,7 +21,7 @@ def nightingale_tool(action: str, **kwargs) -> str:
     if not token:
         return json.dumps({"error": "NIGHTINGALE_TOKEN not configured"})
     
-    headers = {"Authorization": f"Bearer {token}"}
+    headers = {"X-User-Token": token}
     
     try:
         with httpx.Client(verify=False) as client:

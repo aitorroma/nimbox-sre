@@ -29,7 +29,7 @@ class NightingaleClient:
     
     def __init__(self):
         self.base_url = NIGHTINGALE_API
-        self.headers = {"Authorization": f"Bearer {NIGHTINGALE_TOKEN}"}
+        self.headers = {"X-User-Token": NIGHTINGALE_TOKEN}
     
     async def get_targets(self):
         async with httpx.AsyncClient(verify=False) as client:

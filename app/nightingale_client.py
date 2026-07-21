@@ -9,7 +9,7 @@ class NightingaleClient:
         self.base_url = settings.nightingale_api_url
         self.token = settings.nightingale_token
         self.headers = {
-            "X-Warpgate-Token": self.token,
+            "X-User-Token": self.token,
             "Content-Type": "application/json"
         }
     

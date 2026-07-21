@@ -11,3 +11,4 @@ provides_tools:
   - opensre
   - maintenance
   - monit_alerts
+  - runbooks
